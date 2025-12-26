@@ -1,0 +1,39 @@
+Name     demoboyVRAMmultiplexer;
+PartNo   00 ;
+Date     11/03/2025 ;
+Revision 01 ;
+Designer nintendo ;
+Company  nintendo ;
+Assembly None ;
+Location None ;
+Device   g22v10; // like a 22L10 
+
+pin 1 = PPUA3;
+pin 2 = PPUA13;
+pin 3 = CHRA14;
+pin 4 = !PPURD;
+pin 5 = CPUOUT1;
+
+pin 14 = !RAM0BUFOE;
+pin 15 = !RAM3BUFOE;
+pin 16 = RAM0nCE;
+pin 17 = RAM3nCE;
+pin 18 = !RAM1BUFOE;
+pin 19 = !RAM2BUFOE;
+pin 20 = RAM1nCE;
+pin 21 = RAM2nCE;
+pin 22 = !RAM12WriteEn;
+pin 23 = !ROMCE;
+
+ROMCE = CHRA14 & !PPUA13;
+RAM0BUFOE =  CPUOUT1 & !PPUA3 & !PPUA13 & !CHRA14 & PPURD;
+RAM3BUFOE =  CPUOUT1 &  PPUA3 & !PPUA13 & !CHRA14 & PPURD;
+RAM1BUFOE = !CPUOUT1 & !PPUA3 & !PPUA13 & !CHRA14 & PPURD;
+RAM2BUFOE = !CPUOUT1 &  PPUA3 & !PPUA13 & !CHRA14 & PPURD;
+
+RAM0nCE =  CPUOUT1 &  PPUA3;
+RAM3nCE =  CPUOUT1 & !PPUA3;
+RAM1nCE = !CPUOUT1 &  PPUA3;
+RAM2nCE = !CPUOUT1 & !PPUA3;
+
+RAM12WriteEn = CPUOUT1;
