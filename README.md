@@ -7,7 +7,7 @@ Then the people at NESDEV showed me the existence of the gameboy kiosk, and this
 
 You will need to have a NES you don't mind harvesting components from to make this, as well as a game with an MMC5 or MMC5A chip inside. Everything else can be bought as new-old-stock or new stock COTS. 
 
-Power should be supplied to thr 5V connection on the PCB, not through the NES RF module, and I havent seen this draw more than 600 mA while powering the PCB and an attached MGB. A 5V 1A PSU should be more than sufficient. 
+Power should be supplied to the 5V connection on the PCB, not through the NES RF module, and I havent seen this draw more than 600 mA while powering the PCB and an attached MGB. A 5V 1A PSU should be more than sufficient. 
 
 PCB Thickness: 1.6 mm p.m.
 
