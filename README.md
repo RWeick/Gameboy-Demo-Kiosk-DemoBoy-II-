@@ -9,6 +9,6 @@ You will need to have a NES you don't mind harvesting components from to make th
 
 Power should be supplied to the 5V connection on the PCB, not through the NES RF module, and I havent seen this draw more than 600 mA while powering the PCB and an attached MGB. A 5V 1A PSU should be more than sufficient. 
 
-PCB Thickness: 1.6 mm p.m.
+PCB Thickness: 1.6 mm
 
 ![image](https://github.com/RWeick/Gameboy-Demo-Kiosk-DemoBoy-II-/blob/main/DemoBoyII.png)
